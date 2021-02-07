@@ -98,7 +98,7 @@
                     this.background_url = './assets/cloudy.jpg'
                 }
 
-                if(this.description === 'snow'){
+                if(this.description === 'snow' || this.description === 'light snow'){
                     this.background_url = './assets/snow.jpg'
                 }
                 if(this.city === 'dubai'){

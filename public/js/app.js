@@ -2052,7 +2052,7 @@ __webpack_require__.r(__webpack_exports__);
         this.background_url = './assets/cloudy.jpg';
       }
 
-      if (this.description === 'snow') {
+      if (this.description === 'snow' || this.description === 'light snow') {
         this.background_url = './assets/snow.jpg';
       }
 
@@ -50187,8 +50187,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\WeatherApp\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\WeatherApp\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\WeatherAPI\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\WeatherAPI\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
