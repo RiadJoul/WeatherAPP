@@ -2037,7 +2037,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     setResults: function setResults(results) {
       this.weather = results;
-      console.log(this.weather);
       this.country = this.weather.sys.country;
       this.description = this.weather.weather[0].description;
       this.temp = Math.round(this.weather.main.temp);
