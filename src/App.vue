@@ -20,7 +20,7 @@
             <div class="info-side">
                 <div class="today-info-container">
                     <div class="today-info">
-                        <div class="precipitation"> <span class="title">CONDITION </span><span class="value"> {{ weather.weather[0].main }}</span>
+                        <div class="precipitation"> <span class="title" style="padding-right:10px;">CONDITION </span><span class="value"> {{ weather.weather[0].main }}</span>
                             <div class="clear"></div>
                         </div>
                         <div class="humidity"> <span class="title">HUMIDITY</span><span class="value">{{ this.humidity }} %</span>
