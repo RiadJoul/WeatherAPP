@@ -1,14 +1,19 @@
 <template>
     <div>
+      <div class="navbar">
+        <ul>
+          <li><a href="https://github.com/RiadJoul/WeatherAPI" style="margin-left:240px;">Github</a></li>
+        </ul>
+      </div>
         <div class="city-input" style="margin-bottom:30px; color:white; font-weight:bold;" :style="{ visibility: isVisible }">
             <label class="day-name" style="padding-right:30px;">City : </label>
-            <input style="opacity:0.2;" type="text" v-model="city">
-            <button v-on:click="searchWeather" style="width:30%; height:40px;" class="location-button">GET</button>
+            <input style="opacity:0.7; height:24px; font-weight:bold;" type="text" v-model="city">
+            <button v-on:click="searchWeather" style="width:30%; height:40px; margin-left:24px;" class="location-button">GET</button>
         </div>
         <div class="container" v-if="weather != 'undefined'">
             <div class="weather-side" v-bind:style="{ 'background-image': 'url('+getUrl+')' }">
-                <div class="weather-gradient"></div>
-                <div class="date-container">
+                <div class="weather-gradient" ></div>
+                <div class="date-container" >
                     <h2 class="date-dayname">{{ getDay() }}</h2><span class="date-day">{{ getDate() }}</span><i
                         class="location-icon" data-feather="map-pin"></i><span v-if="this.country != ''" class="location">{{ weather.name }}, {{ this.country }}</span>
                 </div>
@@ -43,9 +48,9 @@
 </template>
 
 <script>
+require('dotenv');
     export default {
         mounted() {
-            console.log('loaded');
             this.searchWeather();
         },
         data(){
@@ -96,9 +101,6 @@
                 }
                 if(this.description === 'snow' || this.description === 'light snow'){
                     this.background_url = './assets/snow.jpg'
-                }
-                if(this.city === 'dubai'){
-                    this.background_url = './assets/dubai.jpg'
                 }
                 else{
                     this.background_url = './assets/night.gif'
@@ -361,5 +363,31 @@ body {
   height: 1em;
   width: auto;
   margin-right: 5px;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 </style>
