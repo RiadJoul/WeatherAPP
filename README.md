@@ -1,24 +1,10 @@
-# weatherapp
+☁️ WeatherApp
 
-## Project setup
-```
-npm install
-```
+- This weather app is one of best free weather apps with some features:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+🌡️  Temperature
+⛅ weather widgets
+☀️ Local weather
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Author : Riad Joul
