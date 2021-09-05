@@ -126,7 +126,7 @@ const axios = require('axios').default;
             return {
                 bookPage: 0,
                 api_key: 'b5c036d13bb84a0d951230905210309',
-                api_base: 'http://api.weatherapi.com/v1/forecast.json',
+                api_base: 'https://api.weatherapi.com/v1/forecast.json',
                 userIp:null,
                 city:'',
                 weather:null,
