@@ -4,7 +4,7 @@
           <p>by <a href="https://github.com/RiadJoul/WeatherAPI" target="_blank">Github</a></p>
           <div class="container">
             <div class="right">
-              <figure class="back" id="back-cover" style="background-image: url('./assets/lightning.jpg');"></figure>
+              <figure class="back" id="back-cover" style="background-color:#171717;"></figure>
               <figure class="front" style="background-color:#171717;">
                 <div class="info-side">
                   <div class="today-info-container">
@@ -40,13 +40,13 @@
                 <div class="info-side">
                   <div class="today-info-container">
                       <div class="today-info" style="color:white;">
-                          <div class="precipitation"> <span class="title" style="padding-right:10px;">CONDITION </span><span class="value"> {{weather.forecast.forecastday[2].day.condition.text}}</span>
+                          <div class="precipitation"> <span class="title" style="padding-right:10px;">CONDITION </span><span class="value"> {{weather.forecast.forecastday[1].day.condition.text}}</span>
                               <div class="clear"></div>
                           </div>
-                          <div class="humidity"> <span class="title">HUMIDITY</span><span class="value">{{weather.forecast.forecastday[2].day.avghumidity}} %</span>
+                          <div class="humidity"> <span class="title">HUMIDITY</span><span class="value">{{weather.forecast.forecastday[1].day.avghumidity}} %</span>
                               <div class="clear"></div>
                           </div>
-                          <div class="wind"> <span class="title">WIND</span><span class="value">{{weather.forecast.forecastday[2].day.avgvis_km}} km/h</span>
+                          <div class="wind"> <span class="title">WIND</span><span class="value">{{weather.forecast.forecastday[1].day.avgvis_km}} km/h</span>
                               <div class="clear"></div>
                           </div>
                       </div>
