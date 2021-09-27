@@ -11,4 +11,4 @@ https://weatherkeyapp.herokuapp.com/
 
 Author : Riad Joul
 
-Deployed By Heroku <3
+Deployed By Heroku
